@@ -1,5 +1,6 @@
-# ts-test
-TypeScript 測試
+# 介紹
+TypeScript 的介紹與初始設定
+內容我已經設定好了，之後新建 TypeScript 專案可以參考使用
 
 ---
 
