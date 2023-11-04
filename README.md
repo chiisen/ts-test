@@ -126,4 +126,4 @@ npm install eslint -g
 
 # .editorconfig
 主要是要保持程式碼風格一致
-
+內容我已經設定好了，之後新建 TypeScript 專案可以參考使用
