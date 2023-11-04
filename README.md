@@ -3,7 +3,8 @@ TypeScript 測試
 
 ---
 
-tsc 安裝指令輸入
+# 安裝 tsc
+tsc 安裝指令輸入如下:
 ```bash=
 npm install -g typescript
 
@@ -11,6 +12,26 @@ npm install -g typescript
 tsc --version
 ```
 安裝後就能用 tsc 編譯了 .ts => .js
+
+# 編譯報錯
+```bash=
+../node_modules/@types/node/globals.d.ts:72:13 - error TS2403: Subsequent variable declarations must have the same type.  Variable 'AbortSignal' must be of type '{ new (): AbortSignal; prototype: AbortSignal; abort(reason?: any): AbortSignal; timeout(milliseconds: number): AbortSignal; }', but here has type '{ new (): AbortSignal; prototype: AbortSignal; timeout(milliseconds: number): AbortSignal; }'.
+
+72 declare var AbortSignal: {
+               ~~~~~~~~~~~
+
+  ../../../Users/David/AppData/Roaming/npm/node_modules/typescript/lib/lib.dom.d.ts:2335:13
+    2335 declare var AbortSignal: {
+                     ~~~~~~~~~~~
+    'AbortSignal' was also declared here.
+
+
+Found 1 error in ../node_modules/@types/node/globals.d.ts:72
+```
+解決方法，執行下面指令:
+```bash=
+npm i -d @types/node
+```
 
 # ts-node 是甚麼?
 可以直接執行 TypeScript 指令檔
@@ -85,5 +106,24 @@ npm install -D jest ts-jest @types/jest
 npm test
 ```
 
+# 安裝 prettier
+主要是提供格式化文件的另一個選擇
+可以自己客製化
+```bash=
+npm install --save-dev --save-exact prettier
+```
+建立 .prettierrc.json 設定檔案與 .prettierignore 忽略檔案
+內容我已經設定好了，之後新建 TypeScript 專案可以參考使用
 
+# 安裝 ESLint
+主要是做靜態分析找出錯誤
+可以自己客製化
+```bash=
+npm install eslint -g
+```
+建立 .eslintrc.js
+內容我已經設定好了，之後新建 TypeScript 專案可以參考使用
+
+# .editorconfig
+主要是要保持程式碼風格一致
 
