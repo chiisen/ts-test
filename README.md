@@ -134,3 +134,8 @@ npm install eslint -g
 ```bash=
 tsc
 ```
+
+# 開啟監聽 ts 文件自動編譯
+```bash=
+tsc -w
+```
