@@ -35,7 +35,8 @@ npm i -d @types/node
 ```
 
 # ts-node 是甚麼?
-可以直接執行 TypeScript 指令檔
+可以直接執行 TypeScript 指令檔  
+* ts-node 是一個工具，它允許您直接運行 TypeScript 代碼而無需事先將其編譯為 JavaScript。這樣可以加快開發速度並簡化工作流程，特別是在開發和測試時。
 * 基本上你可以把 ts-node 看作是 node.js + tsc
 
 ts-node 需要依賴 typescript(tsc)
@@ -129,8 +130,8 @@ npm install eslint -g
 主要是要保持程式碼風格一致
 內容我已經設定好了，之後新建 TypeScript 專案可以參考使用
 
-# 編譯專案內的 .ts 檔案
-會更新到 dist 目錄內
+# 🔅編譯專案內的 .ts 檔案
+🔅會更新到 dist 目錄內
 ```bash=
 tsc
 ```
