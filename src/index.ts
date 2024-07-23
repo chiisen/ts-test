@@ -1,4 +1,10 @@
+import * as dotenv from "dotenv"
+dotenv.config()
 
+if (process.env.TEST === undefined) {
+  console.error(".env 檔案中未設定 TEST 環境變數。")
+  process.exit(1)
+}
 
 /**
  * 單元測試用
@@ -7,11 +13,8 @@
  * @returns
  */
 export function hello(name: string): string {
-    return `Hello ${name}`
+  return `Hello ${name}`
 }
 
-
-let message: string = 'Hello, World!';
-console.log(message);
-
-
+let message: string = "Hello, World!"
+console.log(message)

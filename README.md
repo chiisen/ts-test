@@ -117,6 +117,11 @@ npm install --save-dev --save-exact prettier
 建立 .prettierrc.json 設定檔案與 .prettierignore 忽略檔案
 內容我已經設定好了，之後新建 TypeScript 專案可以參考使用
 
+# 安裝 .env 設定檔案
+```shell
+npm install dotenv
+```
+
 # 安裝 ESLint
 主要是做靜態分析找出錯誤
 可以自己客製化
